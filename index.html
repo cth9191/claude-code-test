@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Terminal Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Matrix falling text background -->
+    <div class="matrix-bg" id="matrixBg"></div>
+
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <div class="terminal-title">MATRIX TERMINAL v2.0</div>
+            <div class="terminal-status">
+                <span class="status-indicator"></span>
+                <span>SYSTEM ONLINE</span>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <div class="boot-sequence" id="bootSequence">
+                <div class="boot-line">Initializing Matrix Protocol...</div>
+                <div class="boot-line">Loading neural pathways...</div>
+                <div class="boot-line">Establishing secure connection...</div>
+                <div class="boot-line">System ready. Welcome to the Matrix.</div>
+            </div>
+
+            <div class="messages-container" id="messagesContainer">
+                <!-- Messages will be dynamically added here -->
+            </div>
+        </div>
+
+        <div class="input-container">
+            <div class="input-prompt">root@matrix:~$ </div>
+            <input type="text" id="messageInput" class="message-input" placeholder="Enter your message..." autocomplete="off">
+            <button id="sendButton" class="send-button">SEND</button>
+        </div>
+
+        <div class="controls">
+            <button id="clearButton" class="control-button">CLEAR HISTORY</button>
+        </div>
+    </div>
+
+    <!-- Scan line overlay -->
+    <div class="scan-lines"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
